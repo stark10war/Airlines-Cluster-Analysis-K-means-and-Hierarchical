@@ -45,7 +45,7 @@ WSSdata<- cbind(K, WSS)
   
 WSSdata<-  as.data.frame(WSSdata)
 
-plot(WSSdata)
+plot(WSSdata, xlab = 'No of Clusters', ylab = 'WSS' )
 
 # Hence the required no of clusters can be 5 or 6 clusters.
 
