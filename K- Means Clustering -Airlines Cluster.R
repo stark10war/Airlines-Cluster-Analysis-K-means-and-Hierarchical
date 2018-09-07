@@ -28,7 +28,7 @@ Airlines.scaled<- scale(Airlines, center = TRUE, scale = TRUE)
 summary(Airlines.scaled)
 
 # K-means Clustering
-set.seed(88)
+set.seed(24)
 
 # geting within sum of squares for different no of clusters.
 WSS<- list() 
@@ -70,7 +70,7 @@ Cluster_means<- summarise(group_by(Airlines, Cluster), Balance = mean(Balance, n
                           BonusTrans= mean(BonusTrans, na.rm = TRUE),FlightMiles= mean(FlightMiles, na.rm = TRUE),
                           FlightTrans = mean(FlightTrans, na.rm = TRUE), DaysSinceEnroll = mean(DaysSinceEnroll, na.rm = TRUE))
 
-write.csv(Cluster_means, "K-means Clusters Summary.csv")
+write.csv(Cluster_means, "Cluster Means.csv")
 
 
 
