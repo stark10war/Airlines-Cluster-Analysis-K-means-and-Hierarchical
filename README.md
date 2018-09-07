@@ -14,6 +14,8 @@ There are seven different variables in the dataset, described below:
 •	DaysSinceEnroll = number of days since enrolled in the frequent flyer program
 
 >> The .R file contains the code for clustering.
+>> The ClusterResults.csv files contains data with cluster column added.
+>> the cluster means .csv file is the summary of clusters means
 >> Clone the repo. and change the path for csv file.
 
 Thanks.
