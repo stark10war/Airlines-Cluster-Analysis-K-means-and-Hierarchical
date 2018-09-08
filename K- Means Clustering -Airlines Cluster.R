@@ -78,9 +78,9 @@ write.csv(Cluster_means, "K-means Cluster Means summary.csv")
 #Hierarchical Clustering
 
 Airlines$Cluster<- NULL 
-distances<- dist(Airlines,method = "euclidean")
+distances<- dist(Airlines,method = "euclidean") #calculating distances
 AirlinesHcluster<- hclust(distances, method = "ward.D")
-plot(AirlinesHcluster)
+plot(AirlinesHcluster) #ploting dendrogram
 
 # getting clusters using cutree
 Hclusters<-cutree(AirlinesHcluster, k=5)
